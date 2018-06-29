@@ -1,0 +1,89 @@
+<div th:fragment="sideBarMenu">
+<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menu</h3>
+                <ul class="nav side-menu">
+                  <li><a th:href="@{homeAdmin}"><i class="fa fa-home"></i> Home </a>
+                  </li>
+                 
+                   <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{findChartByBtsName}"> 2G Charts</a></li>
+                      
+                       <li><a>3G CHARTS<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li><a th:href="@{G3HourlyAndDaily}">3G STATISTICS</a>
+                            </li>
+                            <li><a th:href="@{G3135}">3G STATISTICS-WBTS-Usage</a>
+                            </li>
+                          </ul>
+                        </li>
+                      <li><a th:href="@{G4Daily}"> 4G Charts</a></li>
+                    </ul>
+                  </li>
+                
+                    <li><a><i class="fa fa-male"></i>Simple User<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{addSimpleUserRedirect}"> Add Simple User</a></li>
+                      <li><a th:href="@{listSimpleUser}">List Simple user</a></li>
+                    </ul>
+                  </li>
+                 
+                 
+                  <li><a><i class="fa fa-user"></i>Administartor <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{addAdminRedirect}">Add Administartor</a></li>
+                      <li><a   th:href="@{listAdmin}">List Administartor</a></li>
+                    </ul>
+                  </li>
+                  
+              
+                  
+                  
+                  
+                  
+                  
+                  <li><a><i class="fa fa-line-chart"></i>Chart <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{createChartRedirect}"> Add Chart</a></li>
+                      <li><a th:href="@{listCharts}"> List Chart</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                   <li><a><i class="fa fa-gears"></i>Chart Administration <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{chartsToUsers}"> Add Charts To Users</a></li>
+                      <li><a th:href="@{removeChartsToUsersRedirect}">  Remove Charts From Users</a></li>
+                      <li><a th:href="@{BlockChartToUsersRedirect}">Block Chart To Users</a></li>
+                   	  <li><a th:href="@{ReleaseChartsToUsersRedirect}">Release Charts To Users Redirect</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                  
+                   <li><a><i class="fa fa-users"></i>Group<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{addOrUpdateGroupRedirect}"></i>Add Group</a></li>
+                      <li><a th:href="@{listGroup}"></i>List Group</a></li>
+                    </ul>
+                  </li>
+                  
+                  
+                   <li><a><i class="fa fa-gears"></i>Group Administration <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a th:href="@{GroupsToUsers}"> Add Groups To Users</a></li>
+                      <li><a  th:href="@{RemoveGroupsFromUsers}"> Remove Groups From Users</a></li>
+                    	                    	<li><a th:href="@{BlockGroupsToUsersRedirect}">Block Groups To Users</a></li>
+                    	<li><a th:href="@{ReleaseGroupsToUsersRedirect}">Release Groups To Users</a></li>
+
+                    </ul>
+                  </li>
+                  
+                </ul>
+              </div>
+              </div>
+
+
+            </div>
+</div>

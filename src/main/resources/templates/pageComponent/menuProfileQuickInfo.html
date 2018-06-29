@@ -1,0 +1,9 @@
+ <div th:fragment="menuProfileQuickInfo">
+ <div class="profile clearfix">
+   
+   <div class="profile_info">
+     <span th:text="${session.userApp.mail}"></span>
+     <h2 th:text="${session.userApp.nom + ' ' + session.userApp.prenom }" ></h2>
+   </div>
+ </div>
+</div>
